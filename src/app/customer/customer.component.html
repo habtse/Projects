@@ -1,0 +1,21 @@
+<!-- <div class="flex">
+    <div class="f1" *ngFor="let product of customerlist" syle='width:200px'>
+
+        <p>id: {{product.id}}</p>
+        <p>name: {{product.name}}</p>
+        <p>address: {{product.address}}</p>
+        <p>phone.no: {{product.phone}}</p>
+
+
+    </div> -->
+
+
+<div class="card" style="width: 18rem;" *ngFor="let product of customerlist">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{product.id}}</li>
+        <li class="list-group-item">{{product.name}}</li>
+
+        <li class="list-group-item">{{product.address}}</li>
+        <li class="list-group-item">{{product.phone}}</li>
+    </ul>
+</div>

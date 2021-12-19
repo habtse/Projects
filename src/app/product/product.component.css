@@ -1,0 +1,45 @@
+        .f1 {
+            width: 250px;
+            font-family: sans-serif;
+            border-style: solid;
+            border-color: antiquewhite;
+            padding: 10px;
+            margin: 30px;
+            background-color: rgb(252, 252, 214);
+            /* color: crimson; */
+        }
+        
+        h2 {
+            color: green;
+        }
+        
+        p {
+            /* border-style: solid;
+            padding: 15px; */
+            color: cadetblue;
+        }
+        
+        #viewdetail {
+            background-color: blue;
+            color: white;
+            border-radius: 6px;
+        }
+        
+        .flex {
+            display: flex;
+            background-color: powderblue;
+            width: 800px;
+            flex-wrap: wrap;
+        }
+        
+        #button {
+            background-color: rgb(64, 64, 150);
+            color: white;
+            border-style: solid;
+            border-radius: 6px;
+            float: right;
+        }
+        
+        .ttt {
+            margin: 30px;
+        }

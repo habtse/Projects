@@ -1,0 +1,61 @@
+<!-- <p>
+    this the first </p>
+<p>jfgfgk</p>
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="assets/pic2.jpg" alt="Card image cap" width=90 height=90>
+    <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div> -->
+<!-- <div class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+  
+  <div class="card w-50">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+    </div>
+  </div> -->
+<div class="flex">
+    <div class="f1" *ngFor="let product of productlist" syle='width:200px'>
+        <img [src]="product.imageUrl" alt="" width=200 height=200>
+        <h2>{{ product.name|uppercase }}</h2>
+        <input [(ngModel)]="product.name" placeholder="name" />
+        <h3 *ngIf="product.price >=2000">price ${{product.price}}</h3>
+        <h3 *ngIf="product.price < 2000" style="color:red ">price ${{product.price}}(*On Discount)</h3>
+        <p>{{product.description}}</p>
+        <button id='button' (click)=" onViewDetail(product.id) "> view detail</button>
+        <button (click)="addbutton()">addproduct</button>
+        <div class='ttt'>
+            <button (click)="deletePro(product.name)">deleteapp</button>
+        </div>
+    </div>
+    <!-- <div class="f1 ">
+        <img [src]="product2.imageUrl " alt=" " width=50 height=100>
+        <h2>{{ product2.name|uppercase }}</h2>
+        <input [(ngModel)]="product2.name " placeholder="name " />
+        <h3>price {{product2.price}}</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aut, illum velit quos est quasi aperiam adipisci nisi ipsum earum, exercitationem obcaecati provident quas voluptas odio esse soluta, alias incidunt.</p>
+
+        <button (click)="onViewDetail(product2.id) "> view detail</button>
+    </div>
+    <div class="f1 ">
+        <img [src]="product3.imageUrl " alt=" " width=50 height=100>
+        <h2> {{ product3.name|uppercase }}</h2>
+        <input [(ngModel)]="product3.name " placeholder="name " />
+        <h3>price {{product3.price}}</h3>
+        <p>{{product3.description}}</p>
+
+        <button (click)="onViewDetail(product3.id) "> view detail</button>
+    </div>
+
+</div> -->
